@@ -10,10 +10,10 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# Allow frontend CORS (adjust origins as needed)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Replace with your frontend URL in prod
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
