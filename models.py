@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Integer, String, Boolean
-from database import Base
+from database import Base, Task
 
 class Book(Base):
-    __tablename__ = "books"
+    __tablename__ = "tasks"
     
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, index=True)
