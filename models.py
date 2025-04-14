@@ -6,4 +6,5 @@ class Book(Base):
     
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, index=True)
-    author = Column(String)
+    description = Column(String, default="")
+    completed = Column(Boolean, default=False)
